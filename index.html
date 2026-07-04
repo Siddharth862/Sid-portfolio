@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Siddharth Gupta – Associate Software Engineer at Accenture. Full-Stack Developer specialising in Angular, .NET, C#, Azure, React.js and Node.js." />
+    <meta name="author" content="Siddharth Gupta" />
+    <meta name="keywords"
+        content="Siddharth Gupta, Portfolio, Angular, .NET, C#, Azure, React, Node.js, Full Stack Developer, Accenture" />
+    <title>Siddharth Gupta | Full-Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─── NAV ─── -->
+    <nav id="navbar">
+        <div class="nav-brand">Siddharth <span>Gupta</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="nav-cta">Contact me</a></li>
+        </ul>
+        <button class="nav-ham" id="hamBtn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#skills" onclick="closeMobile()">Skills</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="home">
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-inner">
+            <div class="hero-content fade-up">
+                <div class="hero-tag"><span class="dot"></span> Open to new opportunities</div>
+                <h1>
+                    <span class="line">Full-Stack</span>
+                    <span class="line accent-grad">Developer</span>
+                    <span class="line">at Accenture</span>
+                </h1>
+                <p class="hero-desc">
+                    Associate Software Engineer building enterprise web applications with
+                    <strong>Angular, .NET, C#, and Azure</strong> — plus a strong MERN stack foundation.
+                    Based in Ahmedabad.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View my work</a>
+                    <a href="#contact" class="btn-outline">Get in touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Siddharth862" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/siddharth-gupta-366511157/" target="_blank"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:sgkumar6300@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://siddharth862.github.io/portfolio/" target="_blank" aria-label="Portfolio"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual fade-up" style="transition-delay:0.15s">
+                <div class="profile-card">
+                    <div class="profile-avatar">SG</div>
+                    <div class="profile-name">Siddharth Gupta</div>
+                    <div class="profile-role">@Accenture · Ahmedabad</div>
+                    <div class="profile-stat-row">
+                        <div class="profile-stat">
+                            <div class="profile-stat-num">8+</div>
+                            <div class="profile-stat-lbl">Months exp.</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-num">3+</div>
+                            <div class="profile-stat-lbl">Projects</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-num">10+</div>
+                            <div class="profile-stat-lbl">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-card">
+                    <div class="tech-stack-label">Current stack</div>
+                    <div class="tech-pills">
+                        <!-- Existing Skills -->
+                        <span class="pill pill-purple">Angular</span>
+                        <span class="pill pill-purple">.NET / C#</span>
+                        <span class="pill pill-blue">Azure</span>
+                        <span class="pill pill-blue">AWS</span>
+                        <span class="pill pill-green">React.js</span>
+                        <span class="pill pill-green">Node.js</span>
+                        <span class="pill pill-orange">SQL Server</span>
+                        <span class="pill pill-orange">Aurora DB</span>
+                        <span class="pill pill-blue">MongoDB</span>
+                        <span class="pill pill-purple">Firebase</span>
+                        <span class="pill pill-purple">Power BI</span>
+
+                        <!-- New High-Value Skills -->
+                        <span class="pill pill-green">Generative AI</span>
+                        <span class="pill pill-blue">AI Agents</span>
+                        <span class="pill pill-orange">Machine Learning</span>
+                        <span class="pill pill-blue">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" style="background:var(--bg2);">
+        <div class="section-inner">
+            <span class="section-eyebrow fade-up">01 · About</span>
+            <h2 class="section-title fade-up">Who I am &amp; <span>what I do</span></h2>
+            <div class="divider fade-up"></div>
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <p>I'm a <strong>Computer Science graduate and Full-Stack Developer</strong> currently working as an
+                        Associate Software Engineer at Accenture, Ahmedabad. With 8+ months of enterprise experience,
+                        I've gone from building personal projects to shipping production-grade features used across
+                        multiple countries.</p>
+                    <p>At Accenture, I work on <strong>iDIGI</strong> — an internal enterprise platform — building
+                        Angular front-ends, designing .NET/C# RESTful APIs, managing complex international travel data,
+                        and resolving bugs to improve system stability across different modules.</p>
+                    <p>I love the full stack: from designing a clean UI in Angular to architecting a backend in .NET,
+                        hooking up an Azure cloud service, and optimising a SQL query. I believe great software is built
+                        at the intersection of clean code, thoughtful design, and strong collaboration.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">⚙️</div>
+                            <div class="highlight-title">Enterprise dev</div>
+                            <div class="highlight-desc">Production features on Accenture's internal iDIGI platform</div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">☁️</div>
+                            <div class="highlight-title">Cloud-native</div>
+                            <div class="highlight-desc">Azure & AWS deployment, configuration, and resource management
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🎨</div>
+                            <div class="highlight-title">Full-Stack</div>
+                            <div class="highlight-desc">Angular front-ends to .NET APIs to SQL / NoSQL databases</div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🤝</div>
+                            <div class="highlight-title">Agile team player</div>
+                            <div class="highlight-desc">Sprints, standups, and code reviews in a cross-functional team
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-up" style="transition-delay:0.1s">
+                    <div class="about-timeline">
+                        <div class="timeline-item">
+                            <div class="tl-top">
+                                <div class="tl-role">Associate Software Engineer</div>
+                                <div class="tl-date">Nov 2025 – Present</div>
+                            </div>
+                            <div class="tl-co">Accenture · Ahmedabad</div>
+                            <div class="tl-desc">Building and maintaining enterprise web apps on the iDIGI platform.
+                                Developing Angular modules, .NET APIs, managing international travel data across
+                                countries, and handling bug fixes across multiple application modules.</div>
+                            <div class="tl-tags">
+                                <span class="tl-tag">Angular</span>
+                                <span class="tl-tag">.NET</span>
+                                <span class="tl-tag">C#</span>
+                                <span class="tl-tag">SQL Server</span>
+                                <span class="tl-tag">Azure</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-top">
+                                <div class="tl-role">B.Tech – Computer Science &amp; Engineering</div>
+                                <div class="tl-date">2019 – 2023</div>
+                            </div>
+                            <div class="tl-co">Dr. Shakuntala Misra National Rehabilitation University, Lucknow</div>
+                            <div class="tl-desc">Graduated with 77.2% — built a strong foundation in data structures,
+                                algorithms, databases, and web development. Final year projects included a real-time
+                                chat app and an e-learning platform.</div>
+                            <div class="tl-tags">
+                                <span class="tl-tag">MERN Stack</span>
+                                <span class="tl-tag">Firebase</span>
+                                <span class="tl-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:1.5rem;">
+                        <a href="assets/pdf/Siddharth_resume.pdf" download class="btn-primary"
+                            style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.85rem;">
+                            <i class="fa-solid fa-download"></i> Download resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills">
+        <div class="section-inner">
+            <span class="section-eyebrow fade-up">02 · Skills</span>
+            <h2 class="section-title fade-up">Technologies I <span>work with</span></h2>
+            <div class="divider fade-up"></div>
+            <div class="skills-grid">
+                <div class="skill-group fade-up">
+                    <div class="skill-group-icon">🖥️</div>
+                    <div class="skill-group-name">Frontend</div>
+                    <div class="skill-group-sub">UI development & responsive design</div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Angular</span><span
+                                class="skill-bar-pct">80%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">React.js</span><span
+                                class="skill-bar-pct">75%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">JavaScript (ES6+)</span><span
+                                class="skill-bar-pct">85%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">HTML / CSS / Tailwind</span><span
+                                class="skill-bar-pct">90%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="90"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group fade-up" style="transition-delay:0.1s">
+                    <div class="skill-group-icon">⚙️</div>
+                    <div class="skill-group-name">Backend</div>
+                    <div class="skill-group-sub">APIs, services & server-side logic</div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">.NET / C#</span><span
+                                class="skill-bar-pct">75%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Node.js</span><span
+                                class="skill-bar-pct">72%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="72"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">RESTful APIs</span><span
+                                class="skill-bar-pct">80%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Express.js</span><span
+                                class="skill-bar-pct">68%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="68"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group fade-up" style="transition-delay:0.2s">
+                    <div class="skill-group-icon">🗄️</div>
+                    <div class="skill-group-name">Databases</div>
+                    <div class="skill-group-sub">Storage, querying & data modelling</div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">SQL Server</span><span
+                                class="skill-bar-pct">78%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="78"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">MongoDB</span><span
+                                class="skill-bar-pct">75%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Aurora DB</span><span
+                                class="skill-bar-pct">60%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Firebase Firestore</span><span
+                                class="skill-bar-pct">80%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group fade-up" style="transition-delay:0.3s">
+                    <div class="skill-group-icon">☁️</div>
+                    <div class="skill-group-name">Cloud & DevOps</div>
+                    <div class="skill-group-sub">Deployment, CI/CD & infrastructure</div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Microsoft Azure</span><span
+                                class="skill-bar-pct">70%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">AWS</span><span
+                                class="skill-bar-pct">55%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="55"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Git / GitHub</span><span
+                                class="skill-bar-pct">85%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Firebase Hosting</span><span
+                                class="skill-bar-pct">78%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="78"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group fade-up" style="transition-delay:0.4s">
+                    <div class="skill-group-icon">🧠</div>
+                    <div class="skill-group-name">AI & Data</div>
+                    <div class="skill-group-sub">GenAI, Agents & ML Models</div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Generative AI</span><span
+                                class="skill-bar-pct">70%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">AI Agents & Workflows</span><span
+                                class="skill-bar-pct">65%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-top"><span class="skill-bar-name">Machine Learning (ML)</span><span
+                                class="skill-bar-pct">60%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-w="60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects" style="background:var(--bg2);">
+        <div class="section-inner">
+            <span class="section-eyebrow fade-up">03 · Projects</span>
+            <h2 class="section-title fade-up">Things I've <span>built</span></h2>
+            <p class="section-desc fade-up">Personal and enterprise projects that showcase my range across the stack.
+            </p>
+            <div class="projects-grid">
+
+                <div class="project-card fade-up">
+                    <span class="featured-badge">Featured</span>
+                    <div class="project-header">
+                        <div class="project-icon">📚</div>
+                        <div class="project-links">
+                            <a href="https://github.com/Siddharth862/E-Learning-Web-App" class="project-link"
+                                target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-title">E-Learning Web App</div>
+                    <div class="project-desc">
+                        A full-featured e-learning platform with Google OAuth via Firebase Authentication, dynamic
+                        course browsing and enrolment, real-time Firestore data, progress tracking, quiz completion, and
+                        a personalised user dashboard — all in a fully responsive UI.
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Firebase Auth</span>
+                        <span class="project-tag">Firestore</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">HTML / CSS</span>
+                        <span class="project-tag">Responsive UI</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay:0.1s">
+                    <div class="project-header">
+                        <div class="project-icon">💬</div>
+                        <div class="project-links">
+                            <a href="https://github.com/Siddharth862/Chatme" class="project-link" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-title">Real-Time Chat App</div>
+                    <div class="project-desc">
+                        A real-time messaging application built with React.js, React Native, and Firebase — enabling
+                        instant communication, live data sync, and seamless multi-platform support with web-based
+                        content management.
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">React.js</span>
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay:0.2s">
+                    <div class="project-header">
+                        <div class="project-icon">📝</div>
+                        <div class="project-links">
+                            <a href="https://github.com/Siddharth862/NOTE-APP" class="project-link" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-title">Note App</div>
+                    <div class="project-desc">
+                        A full-stack note management app using Node.js and MongoDB. Features full CRUD operations,
+                        Mongoose ORM for schema validation, and a clean UI for creating, editing, and deleting notes
+                        with persistent storage.
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">Mongoose</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">CRUD</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact">
+        <div class="section-inner">
+            <span class="section-eyebrow fade-up">04 · Contact</span>
+            <h2 class="section-title fade-up">Let's <span>connect</span></h2>
+            <p class="section-desc fade-up">Open to new opportunities, collaborations, or just a good tech chat. Drop me
+                a message.</p>
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <div class="contact-item-label">Email</div>
+                            <div class="contact-item-value">sgkumar6300@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <div class="contact-item-label">Phone</div>
+                            <div class="contact-item-value">+91 9112503954</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <div class="contact-item-label">Location</div>
+                            <div class="contact-item-value">Ahmedabad, Gujarat 380028</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div>
+                            <div class="contact-item-label">LinkedIn</div>
+                            <div class="contact-item-value">siddharth-gupta-366511157</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <div class="contact-item-label">GitHub</div>
+                            <div class="contact-item-value">github.com/Siddharth862</div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-up" style="transition-delay:0.1s" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First name</label>
+                            <input type="text" id="fname" placeholder="John" required autocomplete="given-name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last name</label>
+                            <input type="text" id="lname" placeholder="Doe" autocomplete="family-name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required autocomplete="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What's this about?" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity…"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit"
+                        style="display:inline-flex;align-items:center;gap:0.5rem;">
+                        <i class="fa-solid fa-paper-plane"></i> Send message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer-text">
+            &copy; 2026 <span>Siddharth Gupta</span> · All rights reserved.
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/Siddharth862" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/siddharth-gupta-366511157/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:sgkumar6300@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/9112503954" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
